@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW Compare</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/pages/Compare.css">
+
+  <!-- Chart.js 4.x 버전 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 헤더 -->
+    <div class="header">
+      <div class="logo" onclick="goHome()">
+        <img src="../../images/Logo/bmw_logo.png" alt="BMW Logo">
+        <div class="title">
+          <div class="title-main">BMW</div>
+          <div class="title-sub">i-series</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모델 선택 -->
+    <div class="model-select">
+      <div class="selectors">
+        <h2>Compare With</h2>
+        <!-- model1 -->
+        <div class="custom-select" id="model1-select">
+          <div class="selected" onclick="toggleDropdown('model1')">
+            <span id="model1-text">-</span>
+          </div>
+          <div class="dropdown" id="model1-dropdown">
+            <div class="option" onclick="selectModel('model1','i7')">
+              <img src="../../images/CarInfoPage/i7/i7_front.jpg" alt=""><span>THE i7</span>
+            </div>
+            <div class="option" onclick="selectModel('model1','iX')">
+              <img src="../../images/CarInfoPage/iX/iX_front.jpg" alt=""><span>THE iX</span>
+            </div>
+            <div class="option" onclick="selectModel('model1','i5')">
+              <img src="../../images/CarInfoPage/i5/i5_front.jpg" alt=""><span>THE i5</span>
+            </div>
+            <div class="option" onclick="selectModel('model1','i4')">
+              <img src="../../images/CarInfoPage/i4/i4_front.webp" alt=""><span>THE i4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- model2 -->
+        <div class="custom-select" id="model2-select">
+          <div class="selected" onclick="toggleDropdown('model2')">
+            <span id="model2-text">-</span>
+          </div>
+          <div class="dropdown" id="model2-dropdown">
+            <div class="option" onclick="selectModel('model2','i7')">
+              <img src="../../images/CarInfoPage/i7/i7_front.jpg" alt=""><span>THE i7</span>
+            </div>
+            <div class="option" onclick="selectModel('model2','iX')">
+              <img src="../../images/CarInfoPage/iX/iX_front.jpg" alt=""><span>THE iX</span>
+            </div>
+            <div class="option" onclick="selectModel('model2','i5')">
+              <img src="../../images/CarInfoPage/i5/i5_front.jpg" alt=""><span>THE i5</span>
+            </div>
+            <div class="option" onclick="selectModel('model2','i4')">
+              <img src="../../images/CarInfoPage/i4/i4_front.webp" alt=""><span>THE i4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 버튼 -->
+        <div class="buttons">
+          <button onclick="compare()">Compare</button>
+          <button onclick="resetCompare()">Reset</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 비교 테이블 -->
+    <div class="compare-table">
+      <div class="row">
+        <div class="cell">가격</div>
+        <div class="cell" id="price1">-</div>
+        <div class="cell" id="price2">-</div>
+      </div>
+      <div class="row">
+        <div class="cell">출력</div>
+        <div class="cell" id="power1">-</div>
+        <div class="cell" id="power2">-</div>
+      </div>
+      <div class="row">
+        <div class="cell">가속도</div>
+        <div class="cell" id="accel1">-</div>
+        <div class="cell" id="accel2">-</div>
+      </div>
+      <div class="row">
+        <div class="cell">안전최고속도</div>
+        <div class="cell" id="speed1">-</div>
+        <div class="cell" id="speed2">-</div>
+      </div>
+    </div>
+
+    <!-- 상세 비교 (그래프 영역 동일) -->
+    <div class="detail-compare">
+      <div class="detail-item">
+        <canvas id="rangeChart"></canvas>
+        <p>&lt;1회 충전 주행 가능거리&gt;</p>
+      </div>
+      <div class="detail-item">
+        <canvas id="efficiencyChart"></canvas>
+        <p>&lt;정부 공인 표준 전비&gt;</p>
+      </div>
+    </div>
+
+    <div class="detail-compare">
+      <div class="detail-item">
+        <canvas id="acChargeChart"></canvas>
+        <p>&lt;AC 완속 충전&gt; <br>(최대 11KW 0-100%)</p>
+      </div>
+      <div class="detail-item">
+        <canvas id="dcChargeChart"></canvas>
+        <p>&lt;DC 급속 충전&gt; <br>(최대 195kW 10-80%)</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/common.js"></script>
+  <script src="../../js/pages/Compare.js"></script>
+</body>
+</html>

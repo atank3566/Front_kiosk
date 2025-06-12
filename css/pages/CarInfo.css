@@ -1,0 +1,148 @@
+.container {
+  width: 1080px;
+  height: 1920px;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.title-main {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.title-sub {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.compare-btn {
+  padding: 15px 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main-image {
+  position: relative; /* 슬로건 위치 기준점으로 사용 */
+}
+
+.main-image img {
+  width: 100%;
+  height: 440px; /* ✅ 높이 고정 */
+}
+
+.slogan {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  text-align: left;
+  color: #fff; /* 흰색으로 변경 (배경 어두울 경우 가독성 확보) */
+}
+
+.slogan h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.slogan p {
+  font-size: 24px;
+  margin: 5px 0 0 0;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature {
+  text-align: center;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.feature img {
+  width: 360px;
+  height: 250px; /* ✅ 높이 고정 */
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px ;
+}
+
+.detail {
+  text-align: center;
+  height: 450px; /* ✅ 높이 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.detail img {
+  width: 440px; /* ✅ 이미지 너비 고정 */
+  height: 330px; /* ✅ 이미지 높이 고정 */
+  max-height: 320px; /* ✅ 이미지 최대 높이 제한 */
+  object-fit: contain;
+}
+
+.detail p {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 20px;
+  word-break: keep-all; /* ✅ 글자가 길어도 줄바꿈만 생기고 박스는 고정 */
+  line-height: 1.2;
+}
+
+.arrow {
+  position: absolute;
+  top: 53%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6); /* ✅ 검정색에 40% 투명 적용 */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 80px;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}

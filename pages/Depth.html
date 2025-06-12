@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW Depth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages/Depth.css">
+</head>
+<body>
+  <div class="container">
+
+        <!-- 헤더 -->
+    <div class="header" onclick="goHome()">
+      <img src="../images/Logo/bmw_logo.png" alt="BMW Logo" class="logo">
+      <div class="title">
+        <div class="title">BMW</div>
+        <div class="title2">i-series</div>
+      </div>
+    </div>
+
+    <!-- 상단 슬라이더 -->
+    <div class="slider">
+      <div class="slides">
+        <img src="../images/DepthPage/main_1.png" class="slide active">
+        <img src="../images/DepthPage/main_2.png" class="slide">
+        <img src="../images/DepthPage/main_3.png" class="slide">
+        <img src="../images/DepthPage/main_4.jpeg" class="slide">
+      </div>
+
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- 2x2 카드 -->
+    <div class="cards">
+      <div class="card">
+        <p>BMW<br>The i7</p>
+        <button>GO</button>
+      </div>
+      <div class="card">
+        <p>BMW<br>The iX</p>
+        <button>GO</button>
+      </div>
+      <div class="card">
+        <p>BMW<br>The i5</p>
+        <button>GO</button>
+      </div>
+      <div class="card">
+        <p>BMW<br>The i4</p>
+        <button>GO</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../js/pages/Depth.js"></script>
+</body>
+</html>

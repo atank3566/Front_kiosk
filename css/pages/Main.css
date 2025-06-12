@@ -1,0 +1,125 @@
+.container {
+  width: 1080px;
+  height: 1920px;
+  background: #fff;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2px; /* 살짝 넓혀주면 깔끔 */
+}
+
+.title2 {
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+/* 메인 이미지 */
+.main-image {
+  position: relative;
+  text-align: left;
+}
+
+.main-image img {
+  width: 100%;
+  height: 500px;
+}
+
+.main-text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: #fff;
+}
+
+.main-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 10px 0; /* 아래쪽으로만 10px 마진 */
+}
+
+.main-text p {
+  font-size: 30px;
+  margin: 0; /* 기본 마진 제거 */
+}
+
+/* 전기차의 장점 */
+.benefits-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 170px; /* 각 사진 사이 여백 */
+}
+
+.benefit img {
+  width: 140px;
+}
+
+.benefit p {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* 기술 */
+.technology-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.technology-section h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 각 사진 사이 여백 */
+}
+
+.tech img {
+  width: 330px;
+  margin-bottom: 10px;
+}
+
+.tech p {
+  
+  font-size: 40px;
+}
+
+/* 버튼 스타일 */
+.primary-btn {
+  padding: 30px 80px;
+  font-size: 35px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}

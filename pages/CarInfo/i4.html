@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW i4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/pages/CarInfo.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- 상단 헤더 -->
+    <div class="header">
+      <div class="logo" onclick="goHome()">
+        <img src="../../images/Logo/bmw_logo.png" alt="BMW Logo">
+        <div class="title">
+          <div class="title-main">BMW</div>
+          <div class="title-sub">i-series</div>
+        </div>
+      </div>
+      <button class="compare-btn" onclick="goCompare()">Compare With</button>
+    </div>
+
+    <!-- 메인 이미지 -->
+    <div class="main-image">
+      <img src="../../images/CarInfoPage/i4/Top.png" alt="BMW i4 Main Image">
+
+      <!-- 슬로건 -->
+      <div class="slogan">
+        <h1>THE i4</h1>
+        <p>Sheer Driving Pleasure</p>
+      </div>
+    </div>
+
+    <!-- 특징 섹션 -->
+    <div class="features">
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i4/middle1.webp" alt="">
+        <p>편리함을 더한 트렁크</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i4/middle2.webp" alt="">
+        <p>고유의 디자인을 담은 공간</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i4/middle3.webp" alt="">
+        <p>완벽한 스타일링 휠</p>
+      </div>
+    </div>
+
+    <!-- 모델 이동 화살표 섹션 -->
+<div class="slider-section">
+  <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+  <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+</div>
+
+    <!-- 디테일 썸네일 섹션 -->
+    <div class="details">
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i4/i4_1.webp" alt="">
+        <p>향상된 가시성의 라이트</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i4/i4_2.webp" alt="">
+        <p>인상적인 리어 라이트</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i4/i4_3.webp" alt="">
+        <p>상징적인 키드니 그릴</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i4/i4_4.webp" alt="">
+        <p>매력적인 디자인의 휠</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/common.js"></script>
+  <script src="../../js/pages/CarInfo.js"></script>
+</body>
+</html>

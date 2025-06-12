@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW i7</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/pages/CarInfo.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- 상단 헤더 -->
+    <div class="header">
+      <div class="logo" onclick="goHome()">
+        <img src="../../images/Logo/bmw_logo.png" alt="BMW Logo">
+        <div class="title">
+          <div class="title-main">BMW</div>
+          <div class="title-sub">i-series</div>
+        </div>
+      </div>
+      <button class="compare-btn" onclick="goCompare()">Compare With</button>
+    </div>
+
+    <!-- 메인 이미지 -->
+    <div class="main-image">
+      <img src="../../images/CarInfoPage/i7/top.png" alt="BMW i7 Main Image">
+
+      <!-- 슬로건 -->
+      <div class="slogan">
+        <h1>THE i7</h1>
+        <p>Sheer Driving Pleasure</p>
+      </div>
+    </div>
+
+    <!-- 특징 섹션 -->
+    <div class="features">
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i7/middle1.jpg" alt="">
+        <p>혁신적인 콕핏</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i7/middle2.jpg" alt="">
+        <p>뒷자석 엔터테이먼트 시스템</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/i7/middle3.jpg" alt="">
+        <p>파노라마 루프 스카이</p>
+      </div>
+    </div>
+
+    <!-- 모델 이동 화살표 섹션 -->
+<div class="slider-section">
+  <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+  <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+</div>
+
+    <!-- 디테일 썸네일 섹션 -->
+    <div class="details">
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i7/i7_1.jpg" alt="">
+        <p>이그제큐티브 라운지 시트</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i7/i7_2.jpg" alt="">
+        <p>도어 터치 스크린 컨트롤러</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i7/i7_3.jpg" alt="">
+        <p>Bowers & Wilkins 다이아몬드 서라운드 사운드 시스템</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/i7/i7_4.jpg" alt="">
+        <p>이그제큐티브 드라이브 프로</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/common.js"></script>
+  <script src="../../js/pages/CarInfo.js"></script>
+</body>
+</html>

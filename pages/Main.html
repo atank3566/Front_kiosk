@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW i-Series Main</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages/Main.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- 헤더 -->
+    <div class="header" onclick="goHome()">
+      <img src="../images/Logo/bmw_logo.png" alt="BMW Logo" class="logo">
+      <div class="title">
+        <div class="title">BMW</div>
+        <div class="title2">i-series</div>
+      </div>
+    </div>
+
+    <!-- 메인 이미지 -->
+    <div class="main-image">
+      <img src="../images/MainPage/Head.png" alt="Main Car Image">
+      <div class="main-text">
+        <h1>BMW i-series</h1>
+        <p>다이내믹한 주행감, 편리함, 100% Electric</p>
+      </div>
+    </div>
+
+    <!-- 전기차의 장점 -->
+    <div class="benefits-section">
+      <h2>BMW 전기차의 장점</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <img src="../images/MainPage/Benefit1.webp" alt="배기가스">
+          <p>배기가스 무배출</p>
+        </div>
+        <div class="benefit">
+          <img src="../images/MainPage/Benefit2.webp" alt="충전">
+          <p>편리한 충전</p>
+        </div>
+        <div class="benefit">
+          <img src="../images/MainPage/Benefit3.webp" alt="절감">
+          <p>낮은 유지 비용</p>
+        </div>
+      </div>
+      <button class="primary-btn" onclick="goDepth()">BMW 전기차의 대표 모델 확인하기</button>
+    </div>
+
+    <!-- 순수전기 주행 기술 -->
+    <div class="technology-section">
+      <h2>순수전기 주행의 기술</h2>
+      <div class="technologies">
+        <div class="tech">
+          <img src="../images/MainPage/Tech1.webp" alt="빠른 가속성">
+          <p>빠른 가속성</p>
+        </div>
+        <div class="tech">
+          <img src="../images/MainPage/Tech2.webp" alt="안전한 핸들링">
+          <p>안전한 핸들링</p>
+        </div>
+        <div class="tech">
+          <img src="../images/MainPage/Tech3.webp" alt="순수 전기 사운드">
+          <p>순수 전기 사운드</p>
+        </div>
+      </div>
+      <button class="primary-btn" onclick="goCompare()">BMW 전기차의 대표 모델 비교하기</button>
+    </div>
+    <script src="../js/common.js"></script>
+  </div>
+</body>
+</html>

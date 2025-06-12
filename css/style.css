@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 1080px;
+  height: 1920px;
+  background-color: #000;
+  transform-origin: top left;
+  transform: scale(var(--scale));
+  position: relative;
+}
+
+:root {
+  --scale: 1;
+}
+
+.bmw-text {
+  position: absolute;
+  top: 443px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.bmw-text .logo {
+  width: 276px;
+  margin-right: 30px;
+}
+
+.text-group h1 {
+  font-size: 130px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: 10px;
+}
+
+.text-group h2 {
+  font-size: 95px;
+  font-weight: 400;
+  margin: 0; /* 상단 마진 제거 */
+}
+
+.car-image {
+  position: absolute;
+  top: 754px;
+  left: 650px;
+  transform: translateX(-50%);
+  width: 963px;
+  height: 624px;
+}
+
+.start-text {
+  position: absolute;
+  bottom: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  font-weight: 700;
+  user-select: none;
+}

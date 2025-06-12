@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+  <title>BMW iX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/pages/CarInfo.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- 상단 헤더 -->
+    <div class="header">
+      <div class="logo" onclick="goHome()">
+        <img src="../../images/Logo/bmw_logo.png" alt="BMW Logo">
+        <div class="title">
+          <div class="title-main">BMW</div>
+          <div class="title-sub">i-series</div>
+        </div>
+      </div>
+      <button class="compare-btn" onclick="goCompare()">Compare With</button>
+    </div>
+
+    <!-- 메인 이미지 -->
+    <div class="main-image">
+      <img src="../../images/CarInfoPage/iX/top.png" alt="BMW iX Main Image">
+
+      <!-- 슬로건 -->
+      <div class="slogan">
+        <h1>THE iX</h1>
+        <p>Sheer Driving Pleasure</p>
+      </div>
+    </div>
+
+    <!-- 특징 섹션 -->
+    <div class="features">
+      <div class="feature">
+        <img src="../../images/CarInfoPage/iX/middle1.webp" alt="">
+        <p>더 길어진 주행 가능거리</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/iX/middle2.webp" alt="">
+        <p>더 빨라진 충전 속도</p>
+      </div>
+      <div class="feature">
+        <img src="../../images/CarInfoPage/iX/middle3.webp" alt="">
+        <p>더 효율적인 배터리 관리</p>
+      </div>
+    </div>
+
+    <!-- 모델 이동 화살표 섹션 -->
+<div class="slider-section">
+  <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+  <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+</div>
+
+    <!-- 디테일 썸네일 섹션 -->
+    <div class="details">
+      <div class="detail">
+        <img src="../../images/CarInfoPage/iX/iX_1.webp" alt="">
+        <p>완벽한 높이</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/iX/iX_2.webp" alt="">
+        <p>민첩한 움직임</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/iX/iX_3.webp" alt="">
+        <p>강력한 가속력</p>
+      </div>
+      <div class="detail">
+        <img src="../../images/CarInfoPage/iX/iX_4.webp" alt="">
+        <p>숨겨진 기술, 샤이 테크 콘셉트</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../../js/common.js"></script>
+  <script src="../../js/pages/CarInfo.js"></script>
+</body>
+</html>

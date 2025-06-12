@@ -1,0 +1,121 @@
+.container {
+  width: 1080px;
+  height: 1920px;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: #000;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 35px 20px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 2px; /* 살짝 넓혀주면 깔끔 */
+}
+
+.title2 {
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.slider {
+  position: relative;
+  height: 858px; /* 기존보다 조금 더 높임 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slides img {
+  display: none;
+  width: 1000px; /* 슬라이드 이미지 너비 */
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #555;
+}
+
+.cards {
+  background-color: #fff;
+  background-image: url('../../images/DepthPage/Button.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 70px;
+}
+
+.card {
+  color: #fff;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+  border-right: none;
+}
+
+.card:nth-child(3),
+.card:nth-child(4) {
+  border-bottom: none;
+}
+
+.card p {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 15px 40px;
+  font-size: 50px;
+  border-radius: 50px;
+  border: none;
+  background: #585858;
+  color: #fff;
+  cursor: pointer;
+}
