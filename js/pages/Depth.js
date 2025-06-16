@@ -1,16 +1,31 @@
-let currentIndex = 0;
+let autoIndex = 0;
+let autoTimer;
+
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
 const totalSlides = slides.length;
 
-// 슬라이드 변경 함수
+function startAutoSlide() {
+  autoTimer = setInterval(() => {
+    autoIndex = (autoIndex + 1) % totalSlides;
+    showSlide(autoIndex);
+  }, 3000);
+}
+
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.toggle('active', i === index);
-    dots[i].classList.toggle('active', i === index);
   });
-  currentIndex = index;
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+  autoIndex = index;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide(autoIndex);
+  startAutoSlide();
+});
 
 // dot 클릭 시 호출될 함수
 function currentSlide(index) {
