@@ -4,7 +4,7 @@ function resetTimer() {
     clearTimeout(timeout);
     timeout = setTimeout(() =>{
         window.location.href = "/pages/Index.html";
-    }, 30000); 
+    }, 120000); 
     console.log("Timer reset");
 }
 
