@@ -1,4 +1,5 @@
 let autoIndex = 0;
+let prevIndex = 0;
 let autoTimer;
 
 const slides = document.querySelectorAll('.slide');
@@ -13,12 +14,14 @@ function startAutoSlide() {
 }
 
 function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
+  slides[prevIndex].classList.remove("active");
+  slides[index].classList.add("active");
+
   dots.forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
+
+  prevIndex = index;
   autoIndex = index;
 }
 
